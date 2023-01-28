@@ -1,0 +1,4 @@
+
+interface IModel {
+	void DoJob();
+}

@@ -1,0 +1,15 @@
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\obj\Debug\net7.0\ConsoleLecture.csproj.AssemblyReference.cache
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\obj\Debug\net7.0\ConsoleLecture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\obj\Debug\net7.0\ConsoleLecture.AssemblyInfoInputs.cache
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\obj\Debug\net7.0\ConsoleLecture.AssemblyInfo.cs
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\obj\Debug\net7.0\ConsoleLecture.csproj.CoreCompileInputs.cache
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\bin\Debug\net7.0\ConsoleLecture.exe
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\bin\Debug\net7.0\ConsoleLecture.deps.json
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\bin\Debug\net7.0\ConsoleLecture.runtimeconfig.json
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\bin\Debug\net7.0\ConsoleLecture.dll
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\bin\Debug\net7.0\ConsoleLecture.pdb
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\obj\Debug\net7.0\ConsoleLecture.dll
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\obj\Debug\net7.0\refint\ConsoleLecture.dll
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\obj\Debug\net7.0\ConsoleLecture.pdb
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\obj\Debug\net7.0\ConsoleLecture.genruntimeconfig.cache
+C:\Users\kolya\Desktop\studing\c#\ConsoleLecture\obj\Debug\net7.0\ref\ConsoleLecture.dll
