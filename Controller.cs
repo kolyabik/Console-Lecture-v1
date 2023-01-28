@@ -55,7 +55,10 @@ class Controller {
 					Welcome();
 					_userInput = 0;
 					break;
-				// to 
+				// to any lecture
+				default:
+				  	
+					break;
 				}
 
 			} else
@@ -89,4 +92,5 @@ class Controller {
 		_view = new ViewExit(_model as IObservables);
 		_model.DoJob();
 	}
+
 }

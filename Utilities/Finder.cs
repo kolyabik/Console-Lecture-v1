@@ -1,25 +1,22 @@
 class Finder : IFinder {
-	private string lectureListPath;
+	private string pathToDirWithLectures;
 	public Finder() {
-		lectureListPath = Directory.GetCurrentDirectory() + "/LectureList.txt";
+		pathToDirWithLectures = "C:\\Users\\kolya\\Desktop\\studing\\c#\\ConsoleLecture\\Lecture";
 	}
 
-	public bool IsLectureExists(string path) {
-		using (var reader = new StreamReader(lectureListPath)) {
-			string inputLine;
-			while ((inputLine = reader.ReadLine()) != null) {
-				if (inputLine == path) {
-					reader.Close();
-					Console.WriteLine(reader.ReadLine());
-					return true;
+	public string FindLecture(int numLecture) {
+		string[] lectures = Directory.GetFileSystemEntries(pathToDirWithLectures);
+		int trueNumLecture = 1;
+		for (int i = 0; i < lectures.Length; i++) {
+			if (lectures[i].Substring(pathToDirWithLectures.Length+1).StartsWith("L_")) {
+				if (trueNumLecture == numLecture) {
+					return lectures[i];
+				} else {
+					trueNumLecture++;
 				}
 			}
-			reader.Close();
 		}
-		return false;
+		return null;
 	}
 
-	public string GetLectureListPath() {
-		return lectureListPath;
-	}
 }

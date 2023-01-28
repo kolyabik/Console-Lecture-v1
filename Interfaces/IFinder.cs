@@ -1,5 +1,4 @@
 interface IFinder 
 {
-	bool IsLectureExists(string path);
-	string GetLectureListPath();
+	string FindLecture(int numLecture);
 }

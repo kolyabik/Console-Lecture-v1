@@ -2,11 +2,8 @@ class ModelFiles : IModel, IObservables {
 	private List<IObserver> subs;
 	private string LecturesIsEmpty = "empty";
 	private string LecturesIsOver = "done";
-	private ICreater creater;
 	public ModelFiles() {
 		subs = new List<IObserver>();
-		creater = new Creater();
-		creater.CreateList();
 	}
 
 	public void Notify(string input) {
@@ -34,10 +31,8 @@ class ModelFiles : IModel, IObservables {
 		string[] directories = Directory.GetFileSystemEntries(path);
 		if (directories.Length > 0) {
 			for (int i = 0; i < directories.Length; i++) {
-				string nameLecture = directories[i].Substring(path.Length + 1);
-				if (nameLecture.StartsWith("L_")) {
-					creater.AddToList(directories[i]);
-					Notify(nameLecture.Substring(2));
+				if (directories[i].Substring(path.Length+1).StartsWith("L_")) {
+					Notify(directories[i].Substring(path.Length+3));
 				}
 				if (i == directories.Length - 1) {
 					Notify(LecturesIsOver);

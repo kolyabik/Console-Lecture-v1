@@ -1,8 +1,6 @@
 ﻿class Program {
 	public static void Main(String[] args) {
-		Controller c = new Controller();
-		ICreater cr = new Creater();
-		cr.CreateList();		
+		Controller c = new Controller();	
 		while (true) {
 			c.Repeat();
 		}
