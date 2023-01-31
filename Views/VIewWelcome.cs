@@ -14,6 +14,7 @@ class ViewWelcome : IView, IObserver {
 		Console.WriteLine("1. Посмотреть доступные лекции.");
 		Console.WriteLine("2. Создать лекцию.");
 		Console.WriteLine("3. Выйти из приложения.");
+		Console.WriteLine();
 		Console.WriteLine("Сделав выбор, напишите нужную цифру");
 	}
 }

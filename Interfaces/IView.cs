@@ -1,4 +1,3 @@
-
 interface IView {
 	void Print();
 }

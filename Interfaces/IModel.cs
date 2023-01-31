@@ -1,4 +1,3 @@
-
 interface IModel {
 	void DoJob();
 }

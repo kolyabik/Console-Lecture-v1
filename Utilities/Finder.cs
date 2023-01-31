@@ -19,4 +19,19 @@ class Finder : IFinder {
 		return null;
 	}
 
+	public string GetPathLectures(){
+		return pathToDirWithLectures+"\\";
+	}
+
+	public bool SearchMatches(string path,string searching){
+		string[] entries = Directory.GetFileSystemEntries(path);
+		foreach (var entry in entries) 
+		{
+			if(searching == entry){
+				return true;
+			}
+		}
+		return false;
+	}
+
 }

@@ -11,5 +11,6 @@ class ViewExit : IView, IObserver{
 
 	public void Print(){
 		Console.WriteLine("Спасибо, что использовали приложение!");
+		Console.WriteLine();
 	}
 }
