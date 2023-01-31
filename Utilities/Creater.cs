@@ -4,7 +4,7 @@ class Creater : ICreater {
 	private IFinder finder;
 	public Creater() {
 		finder = new Finder();
-		pathToLectures = finder.GetPathLectures();
+		pathToLectures = finder.GetPathIntoCurrentLecture();
 	}
 
 	public bool CreateLecture(string name) {

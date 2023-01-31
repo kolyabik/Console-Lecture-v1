@@ -2,8 +2,10 @@ class ModelFiles : IModel, IObservables {
 	private List<IObserver> subs;
 	private string LecturesIsEmpty = "empty";
 	private string LecturesIsOver = "done";
+	private IFinder finder;
 	public ModelFiles() {
 		subs = new List<IObserver>();
+		finder = new Finder();
 	}
 
 	public void Notify(string input) {
@@ -27,7 +29,7 @@ class ModelFiles : IModel, IObservables {
 
 
 	private void FindLecturers() {
-		string path = "C:\\Users\\kolya\\Desktop\\studing\\c#\\ConsoleLecture\\Lecture";
+		string path = finder.GetPathLectureFolder();
 		string[] directories = Directory.GetFileSystemEntries(path);
 		if (directories.Length > 0) {
 			for (int i = 0; i < directories.Length; i++) {
