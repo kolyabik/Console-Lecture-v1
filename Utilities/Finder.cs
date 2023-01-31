@@ -1,7 +1,7 @@
 class Finder : IFinder {
 	private string pathToDirWithLectures;
 	public Finder() {
-		pathToDirWithLectures = "C:\\Users\\kolya\\Desktop\\studing\\c#\\ConsoleLecture\\Lecture";
+		pathToDirWithLectures = Directory.GetCurrentDirectory()+"\\Lectures";
 	}
 
 	public string FindLecture(int numLecture) {
